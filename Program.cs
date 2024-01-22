@@ -21,7 +21,7 @@ namespace CSharpRampUp
             Console.Write("Enter distance in miles: ");
             double miles = Convert.ToDouble(Console.ReadLine());
             double kilometers = miles * 1.60934;
-            Console.WriteLine($"The distance in kilometers is: {kilograms}");
+            Console.WriteLine($"The distance in kilometers is: {kilometers}");
             Console.WriteLine("===============================================================");
 
             // Part 1.3: Temperature Conversion
