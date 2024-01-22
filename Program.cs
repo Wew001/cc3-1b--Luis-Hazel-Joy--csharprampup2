@@ -30,7 +30,6 @@ namespace CSharpRampUp
             double celsius = (fahrenheit - 32) * 5.0 / 9.0;
             Console.WriteLine($"The temperature in Celsius is: {celsius}");
             Console.WriteLine("===============================================================");
-            Console.WriteLine();
 
             // Part 1.4: Average Age Calculation
             int sumAge = 0;
@@ -52,8 +51,7 @@ namespace CSharpRampUp
             {characterName1} had the ability of {abilityName}, which made him a formidable warrior.Together, they faced many challenges fighting against the darkness, but their unity and determination saw them through.";
             Console.WriteLine(story);
             Console.WriteLine("===============================================================");
-            Console.WriteLine();
-
+            
             // Part 2
             // Part 2.1: Number Pattern 1
             Console.Write("Enter a positive integer: ");
@@ -72,8 +70,6 @@ namespace CSharpRampUp
                 Console.WriteLine();
             }
             Console.WriteLine("===============================================================");
-            Console.WriteLine();
-
             // Part 2.2: Number Pattern 2
             Console.Write("Enter a positive integer: ");
             number = Convert.ToInt32(Console.ReadLine());
@@ -88,8 +84,7 @@ namespace CSharpRampUp
                 sum += i;
             }
             Console.WriteLine("The sum is: " + sum);
-            Console.WriteLine("===============================================================");
-            Console.WriteLine();
+            Console.WriteLine("===============================================================")
 
             // Part 2.3: Number Pattern 3
             Console.Write("Enter a positive integer: ");
@@ -105,7 +100,6 @@ namespace CSharpRampUp
                 {
                     Console.Write(j + " ");
                 }
-                Console.WriteLine("====================== Ba Bye! :)================================");
             }
         }
     }
