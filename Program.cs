@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CSharpRampUp
 {
@@ -6,7 +6,7 @@ namespace CSharpRampUp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to C# Ramp Up!:)");
+            Console.WriteLine("Welcome to C# Ramp Up! :)");
             Console.WriteLine("===============================================================");
 
             // Part 1
@@ -45,13 +45,16 @@ namespace CSharpRampUp
 
             // Part 1.5: Printing a Fantasy Story
             string characterName1 = "Alucard", characterName2 = "Tigreal", characterName3 = "Harith", characterName4 = "Granger", characterName5 = "Fanny";
+
             string equipmentName = "Sword", itemName = "Shield", abilityName = "Strength";
+
+            // Using string interpolation to create a fantasy story
             string story = $@"Once upon a time, there were five heroes named: {characterName1}, {characterName2}, {characterName3}, {characterName4}, and {characterName5}.
             They have the mission to bring back the light to Moniyan Empire, to save the kingdom, each equipped with a {equipmentName} and a {itemName}.
-            {characterName1} had the ability of {abilityName}, which made him a formidable warrior.Together, they faced many challenges fighting against the darkness, but their unity and determination saw them through.";
+            {characterName1} had the ability of {abilityName}, which made him a formidable warrior. Together, they faced many challenges fighting against the darkness, but their unity and determination saw them through.";
             Console.WriteLine(story);
             Console.WriteLine("===============================================================");
-            
+
             // Part 2
             // Part 2.1: Number Pattern 1
             Console.Write("Enter a positive integer: ");
@@ -61,6 +64,7 @@ namespace CSharpRampUp
                 Console.WriteLine("Invalid input");
                 return;
             }
+            // Nested loops to print a number pattern
             for (int i = 1; i <= number; i++)
             {
                 for (int j = 1; j <= i; j++)
@@ -70,6 +74,7 @@ namespace CSharpRampUp
                 Console.WriteLine();
             }
             Console.WriteLine("===============================================================");
+
             // Part 2.2: Number Pattern 2
             Console.Write("Enter a positive integer: ");
             number = Convert.ToInt32(Console.ReadLine());
@@ -79,12 +84,13 @@ namespace CSharpRampUp
                 return;
             }
             int sum = 0;
+            // Loop to calculate the sum of numbers up to the given input
             for (int i = 1; i <= number; i++)
             {
                 sum += i;
             }
             Console.WriteLine("The sum is: " + sum);
-            Console.WriteLine("===============================================================")
+            Console.WriteLine("===============================================================");
 
             // Part 2.3: Number Pattern 3
             Console.Write("Enter a positive integer: ");
@@ -94,13 +100,16 @@ namespace CSharpRampUp
                 Console.WriteLine("Invalid input");
                 return;
             }
+            // Nested loops to print a reverse number pattern
             for (int i = number; i >= 1; i--)
             {
                 for (int j = 1; j <= i; j++)
                 {
                     Console.Write(j + " ");
                 }
+                Console.WriteLine();
             }
+            Console.WriteLine("===============================================================");
         }
     }
 }
