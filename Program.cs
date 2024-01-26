@@ -49,7 +49,7 @@ namespace CSharpRampUp
             string equipmentName = "Sword", itemName = "Shield", abilityName = "Strength";
 
             // Using string interpolation to create a fantasy story
-            string story = $@"Once upon a time, there were five heroes named: {characterName1}, {characterName2}, {characterName3}, {characterName4}, and {characterName5}.
+            string story = $"Once upon a time, there were five heroes named: {characterName1}, {characterName2}, {characterName3}, {characterName4}, and {characterName5}.
             They have the mission to bring back the light to Moniyan Empire, to save the kingdom, each equipped with a {equipmentName} and a {itemName}.
             {characterName1} had the ability of {abilityName}, which made him a formidable warrior. Together, they faced many challenges fighting against the darkness, but their unity and determination saw them through.";
             Console.WriteLine(story);
